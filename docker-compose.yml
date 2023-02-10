@@ -1,9 +1,6 @@
 version: "3"
 services:
   app:
+    container_name: rodrigo-bot
     build: .
     command: pnpm start
-    depends_on:
-      - ffmpeg
-  ffmpeg:
-    image: jrottenberg/ffmpeg:4.1
