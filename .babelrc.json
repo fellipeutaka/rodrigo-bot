@@ -8,6 +8,8 @@
         }
       }
     ],
-    "@babel/preset-typescript"
-  ]
+    "@babel/preset-typescript",
+    "minify"
+  ],
+  "comments": false
 }
