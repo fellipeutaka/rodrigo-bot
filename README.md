@@ -3,6 +3,7 @@
     alt="Rodrigo Bot"
     src=".github/docs/rodrigo.jpg"
     width="250px"
+    style="border-radius: 50%;"
   />
 </h1>
 
