@@ -1,12 +1,15 @@
 import { CommandInteraction, SlashCommandBuilder } from "discord.js";
+import { readdir } from "node:fs/promises";
+import path from "node:path";
+
 import {
   AudioPlayerStatus,
   createAudioPlayer,
   createAudioResource,
   joinVoiceChannel,
 } from "@discordjs/voice";
-import path from "node:path";
-import { readdir } from "node:fs/promises";
+
+
 import { getRandomItemFromArray } from "../utils/getRandomItemFromArray";
 
 async function getRandomAudio() {
