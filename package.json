@@ -11,7 +11,8 @@
     "start": "node .",
     "build": "swc ./src -d dist --copy-files --config-file .swcrc",
     "format": "prettier -w \"**/*.{json,ts,md}\"",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@discordjs/voice": "^0.14.0",
@@ -20,13 +21,24 @@
     "libsodium-wrappers": "^0.7.11"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@fellipeutaka/eslint-config": "^1.4.0",
     "@swc/cli": "^0.1.62",
     "@swc/core": "^1.3.56",
     "@types/node": "^18.16.4",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.39.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "tsx": "^3.12.7",
     "typescript": "^4.9.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

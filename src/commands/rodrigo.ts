@@ -9,7 +9,6 @@ import {
   joinVoiceChannel,
 } from "@discordjs/voice";
 
-
 import { getRandomItemFromArray } from "../utils/getRandomItemFromArray";
 
 async function getRandomAudio() {
