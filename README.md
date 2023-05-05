@@ -55,7 +55,7 @@ This project was developed with the following technologies:
 
 - [TypeScript][ts]
 - [discord.js][discord.js]
-- [Babel][babel]
+- [SWC][swc]
 - [ESLint][eslint]
 - [Prettier][prettier]
 
@@ -114,6 +114,6 @@ Made with ♥ by Fellipe Utaka 👋 [Get in touch!](https://www.linkedin.com/in/
 [node]: https://nodejs.org/
 [ts]: https://www.typescriptlang.org/
 [discord.js]: https://discord.js.org/
-[babel]: https://babeljs.io/
+[swc]: https://swc.rs/
 [eslint]: https://eslint.org/
 [prettier]: https://prettier.io/
