@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 
 RUN npm install -g pnpm
-RUN apk add --no-cache ffmpeg
+RUN apk add ffmpeg
 
 WORKDIR /usr/app
 
