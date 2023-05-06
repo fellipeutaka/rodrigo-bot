@@ -36,6 +36,14 @@ export async function execute(interaction: CommandInteraction) {
     });
   }
 
+  if (!voiceChannel.joinable) {
+    return interaction.reply({
+      content:
+        "This channel is not joinable. Please, check channel's permission and user limit and try again",
+      ephemeral: true,
+    });
+  }
+
   try {
     const selectedAudio = await getRandomAudio();
     const resource = createAudioResource(selectedAudio.path);
