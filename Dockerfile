@@ -6,7 +6,7 @@ RUN apk add --no-cache ffmpeg
 WORKDIR /usr/app
 
 COPY package.json pnpm-lock.yaml ./
-RUN pnpm install
+RUN pnpm install --frozen-lockfile --ignore-scripts
 
 COPY . .
 
